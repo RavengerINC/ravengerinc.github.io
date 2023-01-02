@@ -2681,8 +2681,8 @@ input, select, textarea {
 				margin-bottom: 1em !important;
 			}
 
-			/* #copyright {
-				text-align: left;
-			} */
+			#copyright {
+				text-align: center;
+			}
 
 	}
