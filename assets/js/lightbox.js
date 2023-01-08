@@ -49,4 +49,7 @@ function checkKey(e) {
     else if (e.keyCode == '39') {
         plusSlides(1)
     }
+    else if (e.keyCode == '27'){
+        closeModal()
+    }
 }
