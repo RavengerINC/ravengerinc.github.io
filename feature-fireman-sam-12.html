@@ -15,11 +15,12 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="assets/js/lightbox.js"></script>			
+		<script src="assets/js/lightbox.js"></script>
+		<script src="assets/js/swiped-events.min"></script>		
 	</head>
 
 	<body class="is-preload no-sidebar">
-		<div id="page-wrapper">
+		<div id="page-wrapper" data-swipe-threshold="20" data-swipe-unit="px" data-swipe-timeout="500" data-swipe-ignore="true">
 
 			<!-- Header -->
 			<div id="header-wrapper">
@@ -52,7 +53,7 @@
 									<!-- The Modal/Lightbox -->
 									<div id="myModal" class="modal">
 										<span class="close cursor" onclick="closeModal()">&times;</span>
-										<div class="modal-content">									
+										<div class="modal-content" data-swipe-ignore="false">									
 											<div class="mySlides">
 												<div class="numbertext">1 / 6</div>
 												<img src="images/FS12/FS12_001_720.png" style="width:100%">
@@ -149,5 +150,7 @@
 		<!-- Scripts -->		
 		<script src="assets/js/include.js"></script>
 		<script>document.onkeydown = checkKey;</script>
+		<script>document.addEventListener('swiped-left', function(e) { plusSlides(1) });</script>
+		<script>document.addEventListener('swiped-right', function(e) { plusSlides(-1) });</script>
 	</body>
 </html>
