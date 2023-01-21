@@ -1491,7 +1491,7 @@ input, select, textarea {
 	.close {
 		color: white;
 		position: absolute;
-		z-index: 5;
+		z-index: 10003;
 		top: 10px;
 		right: 25px;
 		font-size: 50px;
