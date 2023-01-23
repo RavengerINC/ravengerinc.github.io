@@ -1459,7 +1459,7 @@ input, select, textarea {
 	/* Demo Reel */
 
 	.video-wrapper {
-		padding: 5%;
+		padding-bottom: 5%;
 	}
 
 	.video-container {
