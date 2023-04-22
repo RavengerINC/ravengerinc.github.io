@@ -16,6 +16,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/lightbox.js"></script>
+		<script src="assets/js/hammer.js"></script>
 	</head>
 
 	<body class="is-preload no-sidebar">
@@ -138,5 +139,14 @@
 		<!-- Scripts -->		
 		<script src="assets/js/include.js"></script>
 		<script>document.onkeydown = checkKey;</script>
+		<script>
+			var imgElement = document.querySelector('img');
+  			var hammer = new Hammer(imgElement);
+  			hammer.get('pinch').set({ enable: true });
+  			hammer.on('pinch', function(event) {
+				var scale = event.scale;
+				imgElement.style.transform = 'scale(' + scale + ')';
+  			});
+		</script>
 	</body>
 </html>
