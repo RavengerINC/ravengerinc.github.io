@@ -397,5 +397,27 @@
             {"icon":"logos/logo_nuke_256.png", "alt":"Nuke"}
         ],
         "writeup":""
+    },
+
+    {
+        "id":"15",
+        "project":"UBI",
+        "date":"2026-01-01",
+        "category":"game",
+        "title":"Unreleased Ubisoft Project",
+        "position":"Senior Technical Artist",
+        "description":"Unreleased project that was in development at Ubisoft",
+        "preview":"UBI/UBI_001_256.png",
+        "images":
+        [
+
+        ],
+        "software":
+        [
+            {"icon":"logos/logo_unity_256.png", "alt":"Unity"},
+            {"icon":"logos/logo_houdini_256.png", "alt":"Houdini"},
+            {"icon":"logos/logo_github_256.png", "alt":"Github"}
+        ],
+        "writeup":"I was employed by Ubisoft as a Senior Technical Artist working on an unreleased project.  My role involed creating and updating visual effects, adapting and writing shaders, extending Unity's Universal Render Pipeline, writing runtime systems to control visual effects, tool development, and consulting on best practices for performance and optimisation."
     }
 ]
