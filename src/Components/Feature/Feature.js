@@ -1,14 +1,14 @@
-import React from 'react';
 import data from '../../data.json';
 import { useParams } from 'react-router-dom';
 import FeatureImage from '../FeatureImage/FeatureImage';
+import ExpandedWriteup from '../ExpandedWriteup/ExpandedWriteup';
 import './Feature.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 function Feature(props){
     let { id } = useParams();
-    const { description, position, writeup, images, software } = data[id]
+    const { description, position, writeup, images, software, project } = data[id]
     const featureImages = images.map(({ high, low, alt }, i) => {
         return (
             <FeatureImage
@@ -40,6 +40,9 @@ function Feature(props){
             </div>
             <div className="Writeup">
                 <p>{ writeup }</p>
+            </div>
+            <div className="ExpandedWriteup">
+                <ExpandedWriteup project={project} />
             </div>
 
         </div>
