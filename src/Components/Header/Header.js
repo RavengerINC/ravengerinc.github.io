@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Header.css';
 
@@ -12,6 +11,7 @@ function Header() {
             <div className="Nav">
                 <ul>
                     <li><NavLink to="/" className={({ isActive}) => (isActive ? "active-nav" : "pending-nav")}>Featured</NavLink></li>
+                    <li><NavLink to="/demo-reel" className={({ isActive}) => (isActive ? "active-nav" : "pending-nav")}>Demo Reel</NavLink></li>
                     <li><NavLink to="/tv-work" className={({ isActive}) => (isActive ? "active-nav" : "pending-nav")}>TV</NavLink></li>
                     <li><NavLink to="/game-work" className={({ isActive}) => (isActive ? "active-nav" : "pending-nav")}>Game</NavLink></li>
                     <li><NavLink to="/about" className={({ isActive}) => (isActive ? "active-nav" : "pending-nav")}>About</NavLink></li>
